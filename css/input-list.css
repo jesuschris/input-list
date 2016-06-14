@@ -1,0 +1,87 @@
+
+input-list {
+  display: table;
+  width: 75%;
+  min-width: 256px;
+}
+
+input-list-header {
+  display: block;
+  margin: 0.75em 0 0 0;
+  font-size: 1.25em;
+  font-weight: lighter;
+}
+
+input-list-comment {
+  display: block;
+  font-size: 0.85em;
+  margin: 0.75em 0 0 0;
+}
+
+input-list-body {
+  display: block;
+  margin: 0.75em 0;
+}
+
+input-list-body .input-list-add-button,
+input-list-body .input-list-remove-button {
+  float: right;
+  border: 1px solid #CCC;
+  background-color: #DDD;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #888;
+}
+
+input-list-body > span {
+  display: block;
+  overflow: hidden;
+  padding-right: 2em;
+}
+
+input-list-body > span > input {
+  width: 100%;
+  min-height: 2em;
+  padding: 0 0.5em;
+  margin: 0;
+  border: 1px solid #DDD;
+}
+
+input-list-body > ul,
+input-list-body > ul > li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+input-list-body > ul{
+  margin: 1em 0;
+}
+
+input-list-body > ul > li {
+  min-height: 2em;
+  padding: 0 0 0.25em 0;
+  margin: 0.5em 0;
+  transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  opacity: 0;
+  border-bottom: 1px solid #DDD;
+}
+
+input-list-body li.show {
+  opacity: 1;
+}
+
+input-list-body > ul > li > p {
+  margin: 0 2.5em 0.5em 0;
+  padding: 0.5em 0.5em 0 0.5em;
+  word-wrap: break-word;
+}
+
+input-list-body .input-list-form-input {
+  display: none;
+}

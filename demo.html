@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <style>
+      html,body {
+        color: #444;
+      }
+      .demoForm {
+        background-color: #EEE;
+        font-family: arial;
+        padding: 2em;
+        margin: auto;
+        max-width: 512px;
+        box-shadow: 1px 2px 2px #888;
+      }
+      .demoForm .inputTable {
+        display: table;
+        margin-bottom: 0.75em;
+      }
+      .demoForm .inputTable .inputRow {
+        display: table-row;
+      }
+      .demoForm .inputTable .inputRow input,
+      .demoForm .inputTable .inputRow label {
+        display: table-cell;
+        margin-bottom: 0.5em;
+        min-height: 2em;
+        padding: 0 0.25em;
+      }
+      .demoForm .inputTable .inputRow label {
+        padding-right: 1em;
+      }
+      .demoForm .inputTable .inputRow input {
+        border: 1px solid #DDD;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/input-list.css">
+  </head>
+  <body>
+    <form class="demoForm" method="post">
+      <h1 style="font-family: 'Source Sans Pro', sans-serif; font-weight: 300;">
+        List Preference Survey
+      </h1>
+      <p>
+        A super cool survey about lists that utilizes a special form-friendly <strong>&lt;input-list&gt;</strong> element!. Contents of the <strong>&lt;input-list&gt;</strong> elements are submitted with form as URL encoded JSON array, with no special form
+        submission scripting necessary! See the <a href="">Read Me</a> for more info.
+      </p>
+
+      <span style="font-size:1.25em;display:block;margin-top:2em;margin-bottom:0.75em;">Contact Info</span>
+      <div class="inputTable">
+        <div class="inputRow">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="inputRow">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+        </div>
+      </div>
+
+      <!-- list declarations! -->
+      <input-list name="favoriteLists">
+        <input-list-header>Favorite Kinds of Lists</input-list-header>
+        <input-list-comment>Enter the kinds of lists you like the most here!</input-list-comment>
+      </input-list>
+
+      <input-list name="leastFavoriteLists">
+        <input-list-header>Least Favorite Kinds of Lists</input-list-header>
+        <input-list-comment>Enter the kinds of lists you like the least here!</input-list-comment>
+      </input-list>
+
+      <input style="border-radius: 1em; padding: 1em 1.5em; margin-top:3em; border: 1px solid #CCC; background-color:#DDD;
+      box-shadow: 1px 1px 1px #888;" type="submit" value="Submit" />
+    </form>
+  </body>
+  <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $('form').submit(function(e) {
+        e.preventDefault();
+        alert($(this).serialize());
+      });
+    </script>
+	  <script type="text/javascript" src="/js/input-list.js"></script>
+  </footer>
+</html>
