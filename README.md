@@ -1,7 +1,8 @@
 <h1>input-list</h1>
 A super simple <strong>&lt;input-list&gt;</strong> component built from raw JS, CSS, and HTML.
 
-Designed to be utilized within normal HTML forms with little to no additional scripting, this component provides and easy to use list interface for your users, and a POSTable, URL encoded JSON array of list elements for your server! Awesome!
+Designed to be utilized within normal HTML forms with little to no additional scripting, this component provides an easy to use list interface for your users, and a POSTable, URL encoded JSON array of list elements for your server! Awesome!
+<br>
 <br>
 
 <h2>Demo</h2>
@@ -11,9 +12,9 @@ In this demo, two <strong>&lt;input-list&gt;</strong> components have been added
 
 The user can view the serialized contents of the form's POST data by clicking the 'submit' button.
 <br>
+<br>
 
 <h2>How to Use</h2>
-
 Using the <strong>&lt;input-list&gt;</strong> component is quite simple. First import the project files...
 
 ```
@@ -41,5 +42,3 @@ As indicated before, when in use, any values added to a <strong>&lt;input-list&g
 ```
 simpleList=%255B%2522Chester%2522%252C%2522Lauren%2522%255D
 ```
-
-<br>
