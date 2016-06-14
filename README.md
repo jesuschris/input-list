@@ -1,9 +1,9 @@
 <h1>input-list</h1>
 A super simple <strong>&lt;input-list&gt;</strong> component built from raw JS, CSS, and HTML.
 
-Designed to be utilized within normal HTML forms with little to no additional scripting, this component provides an easy to use list interface for your users, and a POSTable, URL encoded JSON array of list elements for your server! Awesome!
+Designed to be utilized within normal HTML forms with little to no additional scripting, this component provides an easy to use list interface for your users, and a POSTable, URL encoded JSON array of list values for your server! Awesome!
 
-After preliminary testing, this should be compatible with most modern browsers. ;)
+<i>After preliminary testing, this should be compatible with most modern browsers.</i> ;)
 <br>
 <br>
 
@@ -44,3 +44,7 @@ Any values added to the list are recorded in a URL encoded JSON array on a hidde
 ```
 simpleList=%255B%2522Chester%2522%252C%2522Lauren%2522%255D
 ```
+
+<br>
+<br>
+<h4>Enjoy!</h4>
